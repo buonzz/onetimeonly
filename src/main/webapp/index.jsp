@@ -101,10 +101,13 @@
         <h3 class="text-muted">Share One-time Link</h3>
       </div>
 
-      <div class="jumbotron">
-        <h1>Jumbotron heading</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+      <div class="jumbotron" style="padding-right:0px;padding-left:0px;">
+          <form method="POST" action="save_snippet.jsp">
+              <div class="form-group">
+                <textarea rows="10" cols="90"></textarea>
+              </div>
+              <button class="btn btn-lg btn-success" type="submit">Share</button>
+          </form>
       </div>
       <footer class="footer">
           <p>Created by <a href="http://www.darwinbiler.com">Darwin Biler</a></p>
