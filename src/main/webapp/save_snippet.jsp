@@ -18,6 +18,7 @@
       </div>
 
       <div class="jumbotron" style="padding-right:10px;padding-left:10px;">
+          <p>Copy the following URL and share it to your colleague.</p>
           <form method="POST" action="save_snippet.jsp">
               <div class="form-group">
                  <input type="text" value="<%= onetime_link %>"class="form-control"/>
