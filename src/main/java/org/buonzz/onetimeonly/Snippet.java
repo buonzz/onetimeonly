@@ -1,25 +1,22 @@
 package org.buonzz.onetimeonly;
 
+import java.security.NoSuchAlgorithmException;
+
 public class Snippet {
     public String contents;
-    public int id;
-    private SnippetService repo;
-
-    public Snippet(){
-        this.repo = new SnippetService();
-    }
-    
-    public int getId() {
+    public String id;
+     
+    public String getId() {
         return this.id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
     
-    public void setContent(String v){        
+    public void setContent(String v) throws NoSuchAlgorithmException{        
         this.contents = v;
-        this.id = repo.create(v);
+        this.id = SnippetService.create(v);
     }
     
     

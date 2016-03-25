@@ -14,9 +14,8 @@
             if (request.getParameter("id") == null) {
                 out.println("Not a valid secret");
             } else {
-               SnippetService service = new SnippetService();
-               int id = Integer.parseInt(request.getParameter("id"));
-               out.println(service.get(id));
+               String id = request.getParameter("id");
+               out.println(SnippetService.get(id));
             }
         %>
     </body>
