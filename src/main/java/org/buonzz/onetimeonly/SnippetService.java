@@ -1,24 +1,18 @@
 package org.buonzz.onetimeonly;
 
+import java.util.concurrent.ConcurrentMap;
+import org.mapdb.*;
+
 public class SnippetService {
-    public String contents;
-    public String id;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
+    private final DB db;
     
-    public void setContent(String v){
-        this.contents = v;
-        System.out.println(v);
+    public SnippetService(){
+       this.db = DBMaker.memoryDB().make();
     }
-    
-    
-    public String getContent(){
-        return this.contents;
+    public int create(String snippet){
+        ConcurrentMap map = db.hashMap("map").make();
+        int key = snippet.hashCode();
+        map.put(key, snippet);
+        return key;
     }
 }
