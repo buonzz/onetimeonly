@@ -26,6 +26,6 @@ public class SnippetService {
     }
     
     public static String get(String key){
-        return (String) map.get(key);
+        return (String) map.remove(key);
     }
 }

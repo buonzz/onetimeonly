@@ -19,10 +19,13 @@
              String secret;
              
             if (request.getParameter("id") == null) {
-                secret = "Not a valid secret ID";
+                secret = null;
+                response.sendError(HttpServletResponse.SC_NOT_FOUND);
             } else {
                String id = request.getParameter("id");
                secret = SnippetService.get(id);
+               if(secret == null)
+                   response.sendError(HttpServletResponse.SC_NOT_FOUND);
             }
         %>
               <div class="alert alert-info" role="alert">This data is for one-time viewing only! This data is automatically destroyed upon viewing it.</div>
