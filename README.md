@@ -21,3 +21,23 @@ It uses an embedded in-memory database. There is no way for a hacker (even you) 
 
 * JDK 1.8
 * Tomcat 8 or any similar Servlet Container
+* Maven (for building the dependencies)
+
+## Deployment
+
+The application can be deployed in many ways. Pick the one that is most convinient to you.
+
+### Run with Embedded Tomcat 8 web server
+
+Make sure you have maven installed, before executing this.
+
+```
+./start.sh
+```
+
+### Deploy on Heroku
+
+```
+heroku create
+git push heroku master
+```
