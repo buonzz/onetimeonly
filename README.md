@@ -41,3 +41,8 @@ Make sure you have maven installed, before executing this.
 heroku create
 git push heroku master
 ```
+
+Fetch the latest log
+```
+heroku logs --tail
+```
