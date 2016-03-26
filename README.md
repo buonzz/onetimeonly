@@ -35,6 +35,10 @@ Make sure you have maven installed, before executing this.
 ./start.sh
 ```
 
+This will run the application in your local machine in port 9010
+http://localhost:9010
+
+
 ### Deploy on Heroku
 
 ```
