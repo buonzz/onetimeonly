@@ -1,3 +1,3 @@
 #!/bin/bash
 mvn package
-java -jar target/endorsed/webapp-runner.jar target/*.war
+java -jar target/endorsed/webapp-runner.jar --port 9010 target/*.war
