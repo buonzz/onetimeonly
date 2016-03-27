@@ -3,6 +3,11 @@
 A minimal web application that lets you share confidential information via one-time use link (i.e. the data is destroyed right after it is viewed).
 This is ideal for sharing passwords, credit card numbers, application key codes and other info, instead of directly pasting confidential information in a chat room and emails.
 
+## Demo
+See a working demo on the link below:
+
+[http://secure-reaches-25179.herokuapp.com/](http://secure-reaches-25179.herokuapp.com/)
+
 There is a bunch of other online service that will do the exact same thing. 
 But the idea of submitting your secret to those services itself poses a lot of security questions
 
