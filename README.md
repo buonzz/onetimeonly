@@ -44,6 +44,7 @@ http://localhost:9010
 ```
 heroku create
 git push heroku master
+heroku ps:scale web=1
 ```
 
 Fetch the latest log
